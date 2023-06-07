@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #8e44ad;
+}
+
+.container div,
+a {
+  color: white;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 3.2rem;
+}
+
+.subscribes {
+  font-size: 4.5rem;
+  margin-top: 0.7rem;
+}
+
+.counter a {
+  font-size: 5rem;
+}
+
+.followers {
+  font-size: 1.8rem;
+}
