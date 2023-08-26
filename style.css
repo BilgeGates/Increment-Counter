@@ -1,45 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-.container {
+body {
+  background-color: #8e44ad;
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #8e44ad;
+  overflow: hidden;
 }
 
-.container div,
-a {
-  color: white;
-}
-
-.counter {
+.counter-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 2rem 3.2rem;
+  margin: 30px 50px;
 }
 
-.subscribes {
-  font-size: 4.5rem;
-  margin-top: 0.7rem;
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
 }
 
-.counter a {
-  font-size: 5rem;
-}
-
-.followers {
-  font-size: 1.8rem;
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
 }

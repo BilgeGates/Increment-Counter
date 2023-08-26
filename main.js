@@ -1,17 +1,21 @@
-const subscribes = document.querySelectorAll(".subscribes");
+const counters = document.querySelectorAll(".counter");
 
-subscribes.forEach((subscribe) => {
-  const target = subscribe.getAttribute("data-target");
-  let count = 0;
+counters.forEach((counter) => {
+  counter.innerText = "0";
 
-  const updateSubscribe = () => {
-    const increment = target / 5000;
-    subscribe.innerText = count;
-    count += increment;
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const c = +counter.innerText;
 
-    if (count < target) {
-      setTimeout(updateSubscribe, 1);
+    const increment = target / 200;
+
+    if (c < target) {
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else {
+      counter.innerText = target;
     }
   };
-  updateSubscribe();
+
+  updateCounter();
 });

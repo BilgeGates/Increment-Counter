@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -10,28 +9,28 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Increment Counter</title>
   </head>
   <body>
-    <div class="container">
-      <div class="counter">
-        <a
-          href="https://twitter.com/DeveloperKhatai"
-          class="fab fa-twitter"
-        ></a>
-        <div class="subscribes" data-target="5000"></div>
-        <div class="followers">Twitter Followers</div>
-      </div>
-      <div class="counter">
-        <a
-          href="https://www.facebook.com/profile.php?id=100091496015332"
-          class="fab fa-facebook"
-        ></a>
-        <div class="subscribes" data-target="5000"></div>
-        <div class="followers">Facebook Followers</div>
-      </div>
+    <div class="counter-container">
+      <i class="fab fa-twitter fa-3x"></i>
+      <div class="counter" data-target="12000"></div>
+      <span>Twitter Followers</span>
     </div>
-    <script src="./main.js"></script>
+
+    <div class="counter-container">
+      <i class="fab fa-youtube fa-3x"></i>
+      <div class="counter" data-target="5000"></div>
+      <span>YouTube Subscribers</span>
+    </div>
+
+    <div class="counter-container">
+      <i class="fab fa-facebook fa-3x"></i>
+      <div class="counter" data-target="7500"></div>
+      <span>Facebook Fans</span>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
